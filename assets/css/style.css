@@ -24,7 +24,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 20px;
-    background-color: white;
+    background-color: red;
     display: flex;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .under-header-img>img {
-    background-color: white;
+    background-color: blue;
     border-radius: 20px;
     height: 200px;
     width: 200px;
