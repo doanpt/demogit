@@ -1,0 +1,89 @@
+Quy ước:
+[] là có thể có hoặc không
+<> bắt buộc
+-----------------------------------------------------------------------------
+git config --global -l
+git config --global user.name "Trung Doan"
+git config --global user.email "doanptand@gmail.com"
+------------tạo 1 commit mới:------------------------------------------------
+git add .
+git commit <option> <message>
+	ex:
+		git commit -m "add new" ==> tạo commit mới
+		git commit --am [--no-edit] => sửa commit trên cùng, --no-edit không mở hộp thoại sửa message
+git pull [option] <remote> <branch>: 
+	ex: git pull origin master
+	git pull --rebase origin master
+		origin: là link remote: git remote -v
+		master: là branch muốn pull về
+		--rebase: sắp xếp commit thẳng hàng
+git push [option] <remote> <branch>
+	eX: git push origin master
+		git push -f origin master => ghi đè remote: (force viết tắt -f)
+
+-------------Luồng sửa commit trên cùng(thêm file, sửa message)--------------------
+B1: Sửa file cần sửa
+git add .
+git commit --am [--no-edit] => sửa commit trên cùng, --no-edit không mở hộp thoại sửa message
+git pull --rebase origin master
+git push -f origin master
+----remote: 
+Mặc định khi clone về thì remote có sẵn xem trong: git remote -v
+muốn xóa remote :git remote remove <tên remote>: git remote remove origin 
+muốn add mote: git remote add <tên remote> <link git>: git remote add doanpt https://github.com/doanptand/L2203Jetpack.git trong đó doanpt là tên thay origin(mặc định)
+
+
+-------------Cách khởi tạo git:-----------------------------------
+C1: Clone remote có sẵn sau đó copy code vào folder vừa clone xong push
+	git clone https://github.com/doanptand/L2203Music.git
+C2: 
+git init
+git remote add origin https://github.com/doanptand/L2203Music.git
+add, commit và push
+-------------Xem log
+git log [options...]
+	ex: git log 							: Mỗi commit sẽ hiển thị full thông tin 4 dòng
+		git log --oneline 					: mỗi commit sẽ hiển thị trên 1 dòng gồm commit id và message
+		git log --oneline -n 10				: tương tự câu oneline nhưng chỉ lấy 10 commit trên cùng
+		git log --oneline -n 10 graph		: tương tự câu bên trên nhưng hiển thị bản đồ
+		
+Phân biệt pull và fetch
+pull bao gồm việc lấy code và merge luôn vào working directory
+fetch: lấy tất cả thay đổi từ remote về local repo
+---------------------------------------------------------------------------------------------------
+học về các nhánh, ý nghĩa và cách sử dụng: 
+git flow: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+https://tigosoftware.com/vi/giai-thich-workflow-theo-kieu-gitflow
+
+	tạo branch mà không chuyển đổi branch: git branch <name> ex: git branch develop
+	git branch [-a]: Liệt kê tất cả các branch, nếu có -a là tất cả, k có -a thì chỉ liệt kê branch trên local
+	git branch -d <name>: xóa branch có tên = name ex: git branch -d develop => xóa branch develop 
+	git branch -h: hiển thị danh sách gợi ý liên quan đến branch
+	
+	git checkout [option] <branch>: git checkout -b develop: -b tức là nếu chưa có branch develop thi tạo branch develop rồi chuyển, khi branch hiện tại đang sửa/thêm/xóa file mà checkout thì các file đó vẫn giữ nguyên đang sửa/xóa/thêm ở branch mới
+git ch	tạo branch, checkout branch, delete branch
+	
+	git merge <branch> ex: branch hiện tại là main và run: git merge develop => merge code/commit của branch develop về main
+		Mặc định nếu branch develop không conflict với main thì sẽ là fast-forward tức là không tạo thêm commit merge
+		Nhưng nếu bị conflict thì sẽ có 1 commit merge, hoặc không conflict nhưng vẫn muốn có commit merge thì thêm option --no-ff: git merge --no-ff develop
+		git merge --squash develop: Nếu branch develop có 10 commit làm cho feature a, nhưng khi merge vào main thì chỉ còn 1 commit thì thêm option --squash
+--------------------------------------------------------------------------------------------------------------
+	rebase branch/rebase commit
+	cherry-pick
+so sánh --rebase vs merge
+quy trình review code:
+	sử dụng 2 repo ở 2 acc bằng cách fork
+	sử dụng 1 repo và nhiều branch
+----------------------------------------------------------------------------------------------------
+câu lệnh: git reset, git clean
+Create/apply patch
+shelf/unshelf commit
+git stashing :tương tự như shelf nhưng shelf lưu trên idea của ide còn stash là git
+revert commit
+học kỹ câu lệnh rebase interactive
+Xóa commit, gộp commit, sửa commit đã push, đảo thứ tự
+xem lịch sử sử dụng git, roolback amend...vv: git reflow
+aliases: create short cut for common command
+---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+học sử dụng tool source tree
