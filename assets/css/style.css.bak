@@ -6,7 +6,7 @@
 }
 
 .header img {
-    max-height: 700px;
+    max-height: 600px;
     width: 100%;
 }
 
@@ -15,11 +15,7 @@ body {
 }
 
 .under-header {
-<<<<<<< HEAD
-    color: red;
-=======
     color: yellow;
->>>>>>> 7626017 (change bgc)
     border: 1px solid;
     position: absolute;
     margin-top: -100px;
@@ -28,11 +24,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 20px;
-<<<<<<< HEAD
-    background-color: red;
-=======
     background-color: blue;
->>>>>>> 7626017 (change bgc)
     display: flex;
 }
 
