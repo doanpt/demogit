@@ -1,0 +1,409 @@
+/* Moblie :with <740px */
+@media only screen and (max-width:46.1875em) {
+    .profile-header img {
+        height: 150px;
+    }
+
+    .header img {
+        height: 300px;
+    }
+
+    .under-header-img>img {
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; 
+    }
+
+    .under-header {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 240px;
+    }
+
+    .information {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        display: inline;
+    }
+
+    .under-header-text{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .column1 {
+        width: 100%;
+        margin-top: -25px;
+        margin-left: 0;
+        margin-right: 0;
+       
+    }
+    
+    .column1 p{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: -25px;
+    }
+
+    .column12 {
+        margin-top: 25px;
+        margin-left: 8%;
+        margin-right: 8%;
+        width: 82%;
+        max-width: 100%;
+    }
+    
+    .contact-item {
+        margin-right: 5px;
+        margin-left: 5px;
+        display: block;
+        width: 90%;
+    }
+
+    .column2,
+    .column3 {
+        display: none;
+    }
+
+    nav>ul {
+        display: flex;
+        width: 97%;
+        margin-left: 1%;
+        padding: 2px;
+        justify-content: space-around;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        font-style: 14px;
+        line-height: 30px;
+    }
+
+    nav ul li a i {
+        font-size: 14px;
+        font-style: 14px;
+    }
+
+    section {
+        margin-top: 60px;
+        margin-left: 1%;
+        width: 95.5%;
+        height: max-content;
+    }
+
+    .text {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .blog1,
+    .blog2 {
+        display: block;
+    }
+
+    .blog-img>img {
+        width: 100%;
+    }
+
+    .blog-content {
+        margin-left: 0;
+    }
+
+    .contacthtml {
+        display: inline;
+    }
+    .textcontact{
+        display: none;
+    }
+    .email4,
+    .birthday,
+    .phone5,
+    .location {
+        display: flex;
+        font-weight: bold;
+    }
+    .skill{
+        margin-top: 15px;
+    }
+}
+
+/*tabllet width >740px and *width < 1024px */
+@media only screen and (min-width:46.25em)and (max-width:63.9375em) {
+    .profile-header img {
+        height: 150px;
+    }
+
+    .header img {
+        height: 300px;
+    }
+
+    .under-header-img>img {
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: auto;
+        display: block; 
+    }
+
+    .under-header {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 240px;
+    }
+
+    .information {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .under-header-text{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .column1 {
+        width: 100%;
+        margin-top: -30px;
+        margin-left: 10%;
+        margin-right: 10%;
+       
+    }
+    
+    .column1 p{
+        padding: 5px;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .column22, .column32{
+        margin-top: -30px;
+    }
+    .column12 {
+        margin-top: -50px;
+        margin-right: 8%;
+        width: 25%;
+        max-width: 100%;
+    }
+    
+    .contact-item {
+        margin-right: 5px;
+        margin-left: 5px;
+        display: block;
+        width: 90%;
+    }
+
+    .column2,
+    .column3 {
+        margin-left: -100%;
+        display: block;
+        width: 50%;
+        margin-top: 80px;
+    }
+
+    nav>ul {
+        display: flex;
+        width: 96.5%;
+        margin-left: 1%;
+        padding: 2px;
+        justify-content: space-around;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        font-style: 18px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    nav ul li a i {
+        font-size: 18px;
+        font-style: 18px;
+    }
+
+    section {
+        margin-top: 60px;
+        margin-left: 1%;
+        width: 95.5%;
+        height: max-content;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .blog1,
+    .blog2 {
+        display: flex;
+    }
+
+    .blog-img>img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .blog-content {
+        margin-left: 0;
+    }
+
+    .contacthtml {
+        display: none;
+    }
+
+    .email,
+    .birthday,
+    .phone,
+    .location {
+        display: flex;
+        font-weight: bold;
+    }
+    .skill{
+        margin-top: 15px;
+    }
+}
+
+/*width >1024px and *width < 1366px */
+@media only screen and (min-width:64em)and (max-width:85.3125em) {
+    .profile-header img {
+        height: 150px;
+    }
+
+    .header img {
+        height: 300px;
+    }
+
+    .under-header-img>img {
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: auto;
+        display: block; 
+    }
+
+    .under-header {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 240px;
+    }
+
+    .information {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .under-header-text{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .column1 {
+        width: 100%;
+        margin-top: -30px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .column1 p{
+        padding: 5px;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .column21, .column31{
+        margin-left: 30%;
+    }
+    .column22, .column32{
+        margin-top: -30px;
+        margin-left: 30%;
+    }
+    .column12 {
+        margin-top: -50px;
+        margin-right: 8%;
+        width: 25%;
+        max-width: 100%;
+    }
+    
+    .contact-item {
+        margin-right: 5px;
+        margin-left: 5px;
+        display: block;
+        width: 90%;
+    }
+
+    .column2,
+    .column3 {
+        margin-left: -100%;
+        display: block;
+        width: 50%;
+        margin-top: 80px;
+    }
+
+    nav>ul {
+        display: flex;
+        width: 96.5%;
+        margin-left: 1%;
+        padding: 2px;
+        justify-content: space-around;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        font-style: 18px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    nav ul li a i {
+        font-size: 18px;
+        font-style: 18px;
+    }
+
+    section {
+        margin-top: 60px;
+        margin-left: 1%;
+        width: 95.5%;
+        height: max-content;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .blog1,
+    .blog2 {
+        display: flex;
+    }
+
+    .blog-img>img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .blog-content {
+        margin-left: 0;
+    }
+
+    .contacthtml {
+        display: none;
+    }
+
+    .email,
+    .birthday,
+    .phone,
+    .location {
+        display: flex;
+        font-weight: bold;
+    }
+}
