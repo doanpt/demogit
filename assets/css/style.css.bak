@@ -6,7 +6,11 @@
 }
 
 .header img {
-    max-height: 600px;
+<<<<<<< HEAD
+    max-height: 800px;
+=======
+    max-height: 700px;
+>>>>>>> a6ad73b0000a711772959f3ef0944a7b2d3144e6
     width: 100%;
 }
 
